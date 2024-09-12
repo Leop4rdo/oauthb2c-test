@@ -1,0 +1,21 @@
+
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: https://senai127nucleoti.b2clogin.com/b2a8f113-5fd3-434f-870f-195894b5b1e4/v2.0/
+          jwk-set-uri: https://senai127nucleoti.b2clogin.com/senai127nucleoti.onmicrosoft.com/b2c_1_signin_signup/discovery/v2.0/keys
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        format_sql: true
+  datasource:
+    password: bcd127
+    username: admin
+    url: jdbc:postgresql://localhost:5432/poc_oauth
+    driver-class-name: org.postgresql.Driver
+
+
